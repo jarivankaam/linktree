@@ -1,0 +1,37 @@
+.link-wrapper {
+    
+    .link-wrapper__body {
+    transition: .4s;
+    margin-top: 2rem;
+    background: $linkBackground;
+    height: 48px;
+    width: 300px;
+    border-radius: $border-radius-card;
+    padding: $padding-card;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+    .link-wrapper__content {
+        .link-wrapper__text, .link-wrapper__icon {
+           padding: 10px;
+           
+            margin: 0 auto;
+            font-size: 1.75em;
+        }
+  
+    }
+    &:hover {
+        transition: .4s;
+        transform: scale(1.1);
+    }
+    }
+   
+}
+
+
+@media screen and (max-width: 991px) {
+    html {
+        overflow: hidden;
+    }
+}

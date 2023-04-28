@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Portfolio",
+    "url": "https://jarivankaam.nl",
+    "icon": "fa-solid fa-folder"
+  },
+  {
+    "name": "Buy me A coffee",
+    "url": "https://www.buymeacoffee.com/",
+    "icon": "fa-solid fa-cup-togo"
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com/jarivankaam",
+    "icon": "fa-brands fa-github"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.gg/shaKRDepHp",
+    "icon": "fa-brands fa-discord"
+  }
+  
+]

@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:scss": "sass --watch ./assets/scss/style.scss  ./css/main.css",
     "test": "snyk test",
-    "monitor": "snyk monitor"
+    "monitor": "snyk monitor",
+    "build": "webpack --mode production",
+    "build:js": "webpack --mode production",
+    "watch:css": "sass assets/scss/style.scss dist/css/style.min.css --style=compressed --watch",
+    "watch": "webpack --mode development --watch",
+    "watch:js": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -20,7 +24,20 @@
   },
   "homepage": "https://github.com/jarivankaam/framework-boilerplate#readme",
   "devDependencies": {
-    "sass": "^1.57.1",
-    "snyk": "^1.1085.0"
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "snyk": "^1.1085.0",
+    "style-loader": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2"
   }
 }
